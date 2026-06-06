@@ -1,11 +1,23 @@
-import { z } from "zod";
+import {z} from "zod";
+import { JWTPayload } from "jose";
 
-export const getAuthenticationMethodOutputSchema = z.object({
-  provider: z.enum(["GOOGLE_OAUTH"]),
-  displayName: z.string().optional(),
-  displayText: z.string().optional(),
-  authUrl: z.string(),
-});
-export type GetAuthenticationMethodOutputSchema = z.infer<
-  typeof getAuthenticationMethodOutputSchema
->;
+export interface JwtPayload extends JWTPayload {
+  userId: string;
+  iat?: number;
+  exp?: number;
+}
+
+export const createUserWithEmailAndPasswordInput = z.object({
+    fullName: z.string().describe("full name of the user"),
+    email: z.email().describe("email address of the user"),
+    password: z.string().describe("password of the user")
+
+})
+export const signInUserWithEmailAndPasswordInput = z.object({
+    email: z.email().describe("email address of the user"),
+    password: z.string().describe("password of the user")
+
+})
+
+export type CreateUserWithEmailAndPasswordInput = z.infer<typeof createUserWithEmailAndPasswordInput>
+export type SignInUserWithEmailAndPasswordInput = z.infer<typeof signInUserWithEmailAndPasswordInput>

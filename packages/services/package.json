@@ -11,7 +11,9 @@
   "dependencies": {
     "@repo/database": "workspace:*",
     "@repo/logger": "workspace:*",
+    "argon2": "^0.44.0",
     "google-auth-library": "^10.5.0",
+    "jose": "^6.2.3",
     "zod": "^4.3.5"
   }
 }

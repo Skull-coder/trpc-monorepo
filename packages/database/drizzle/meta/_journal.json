@@ -5,8 +5,43 @@
     {
       "idx": 0,
       "version": "7",
-      "when": 1767592965691,
-      "tag": "0000_dusty_morg",
+      "when": 1780557824825,
+      "tag": "0000_clumsy_obadiah_stane",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1780559557256,
+      "tag": "0001_dusty_silk_fever",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1780654812835,
+      "tag": "0002_daily_franklin_storm",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1780656292765,
+      "tag": "0003_glamorous_ben_grimm",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1780680551375,
+      "tag": "0004_condemned_annihilus",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1780722322894,
+      "tag": "0005_curved_maestro",
       "breakpoints": true
     }
   ]
